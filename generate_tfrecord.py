@@ -21,6 +21,7 @@ import glob
 import pandas as pd
 import io
 import json
+import cv2
 import argparse
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'    # Suppress TensorFlow logging (1)

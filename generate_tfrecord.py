@@ -82,7 +82,7 @@ def json_to_csv(path):
         with open(json_file) as f:
             d = json.load(f)
         filename = d['annotation']['filename']
-        img_shape = cv2.imread(os.path.join(os.path.join(json_train_dir,os.pardir,'img_train'),filename)).shape
+        img_shape = cv2.imread(os.path.join(os.path.join(path,os.pardir,'img_train'),filename)).shape
         height = img_shape[0]
         width = img_shape[1]
         for member in d['annotation']['regions']:
